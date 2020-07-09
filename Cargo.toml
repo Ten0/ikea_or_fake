@@ -1,0 +1,14 @@
+[package]
+name = "ikea_or_fake"
+version = "0.1.0"
+authors = ["Thomas BESSOU <thomas.bessou@hotmail.fr>"]
+edition = "2018"
+description = "A guessing game where you can try to find out if the given name is an IKEA item or a generated name"
+repository = "https://github.com/Ten0/ikea_or_fake"
+
+[dependencies]
+anyhow = "1"
+markov = "1"
+rand = "0.7"
+reqwest = { version = "0.10", features = ["blocking", "gzip"] }
+scraper = "0.12"
